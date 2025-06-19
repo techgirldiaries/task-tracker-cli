@@ -1,6 +1,6 @@
 # Task Tracker CLI
 
-Task Tracker CLI is a simple command-line application for tracking and managing your tasks. It allows you to add, update, delete and list tasks with statuses such as "todo", "in-progress" and "done". Additional features include setting task priorities, due dates and notes, as well as sorting and clearing tasks. Tasks are stored in a JSON file named `tasks.json` in the current directory. This is a solution for the [Task Tracker](https://github.com/techgirldiaries/task-tracker-cli) challenge from [Roadmap.sh](https://roadmap.sh/projects/task-tracker).
+Task Tracker CLI is a simple command-line application for tracking and managing your tasks. It allows you to add, update, delete and list tasks with statuses such as "todo", "in-progress" and "done". Tasks are stored in a JSON file named `tasks.json` in the current directory. This is a solution for the [Task Tracker](https://github.com/techgirldiaries/task-tracker-cli) challenge from [Roadmap.sh](https://roadmap.sh/projects/task-tracker).
 
 ## How to Use
 
@@ -121,3 +121,6 @@ Alternatively, you can save the code directly to a file named `task-cli.py`.
 - Comprehensive error handling for commands, arguments and file operations.
 - Maintains all required task properties.
 - Automatically creates the `tasks.json` file if it doesn't exist.
+
+  ## Updates (Coming Soon...)
+Additional features such as setting task priorities, due dates and notes, as well as sorting and clearing tasks. 
