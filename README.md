@@ -10,6 +10,7 @@ If you wish to clone the repository, run:
 git clone https://github.com/techgirldiaries/task-tracker-cli.git
 cd task-tracker-cli
 ```
+Ensure you have Python 3 installed (tested with Python 3.6+)
 
 Alternatively, you can save the code directly to a file named `task-cli.py`.
 
@@ -52,13 +53,14 @@ Alternatively, you can save the code directly to a file named `task-cli.py`.
 - **Add a new task** (with optional priority, due date, and notes):
 
   ```bash
-  python task-cli.py add "Buy groceries" high 2025-06-30 "Get milk and eggs"
+  python task-cli.py add "Buy groceries"
+  python task-cli.py add "Finish project report"
   ```
 
 - **Update a task** (update description, priority, due date, or notes):
 
   ```bash
-  python task-cli.py update 1 "Buy groceries and cook dinner" medium 2025-07-01 "Include dessert"
+  python task-cli.py update 1 "Buy groceries and vegetables"
   ```
 
 - **Delete a task**:
@@ -67,67 +69,55 @@ Alternatively, you can save the code directly to a file named `task-cli.py`.
   python task-cli.py delete 1
   ```
 
-- **Clear all tasks** (requires confirmation):
-
-  ```bash
-  python task-cli.py clear
-  ```
-
 - **Mark a task as in progress or done**:
 
   ```bash
-  python task-cli.py mark-in-progress 1
+  python task-cli.py mark-in-progress 2
   python task-cli.py mark-done 1
   ```
 
-- **List all tasks** (optionally filtered by status and sorted by priority or due date):
+- **List all tasks**:
 
   ```bash
   python task-cli.py list
-  python task-cli.py list todo priority
-  python task-cli.py list in-progress due-date
-  python task-cli.py list done
   ```
 
-- **Show help**:
+  - **List all tasks by status**:
 
   ```bash
-  python task-cli.py help
+  python task-cli.py list todo 
+  python task-cli.py list in-progress 
+  python task-cli.py list done
   ```
 
 ## Features
 
 - **File Storage**: Uses a JSON file (`tasks.json`) to store tasks.
 - **Task Management**:
-  - Add new tasks with descriptions, priority (low, medium, high), due date (YYYY-MM-DD), and notes.
-  - Update task descriptions, priority, due date, or notes.
-  - Delete individual tasks.
-  - Clear all tasks with user confirmation.
-  - Mark tasks as "todo", "in-progress", or "done".
+  - Add new tasks with descriptions.
+  - Update task descriptions.
+  - Delete tasks.
+  - Mark tasks as "todo", "in-progress" or "done".
 - **Task Listing**:
   - List all tasks with full details.
   - Filter tasks by status ("todo", "in-progress", "done").
-  - Sort tasks by priority or due date.
 - **Task Properties**:
   - Unique ID.
   - Description.
   - Status ("todo", "in-progress", "done").
-  - Priority ("low", "medium", "high").
-  - Due date (optional, in YYYY-MM-DD format).
-  - Notes (optional).
   - Creation timestamp.
   - Last update timestamp.
 - **Error Handling**:
   - Invalid commands.
-  - Missing or invalid arguments (e.g., task ID, status, priority, due date).
-  - Invalid date formats.
+  - Missing or invalid arguments.
+  - Invalid task IDs.
   - File operation errors.
 
 ## Implementation Notes
 
-- Uses Python's built-in `json` and `datetime` modules for file operations and date handling.
+- Uses Python's built-in `json` module for file operations.
 - No external dependencies required.
 - Simple command-line interface with positional arguments.
-- Comprehensive error handling for commands, arguments, and file operations.
-- Maintains all required and extended task properties.
+- Comprehensive error handling for commands, arguments and file operations.
+- Maintains all required task properties.
 - Automatically creates the `tasks.json` file if it doesn't exist.
