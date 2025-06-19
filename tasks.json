@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "description": "Buy groceries",
+    "status": "todo",
+    "createdAt": "2025-06-19T23:13:57.176252",
+    "updatedAt": "2025-06-19T23:13:57.176252"
+  },
+  {
+    "id": 2,
+    "description": "Finish uni projects",
+    "status": "in-progress",
+    "createdAt": "2025-06-19T23:18:26.221952",
+    "updatedAt": "2025-06-19T23:19:21.313229"
+  },
+  {
+    "id": 3,
+    "description": "Buy groceries",
+    "status": "todo",
+    "priority": "high",
+    "due_date": "2025-06-30",
+    "notes": "Get milk and eggs",
+    "createdAt": "2025-06-19T23:25:43.977802",
+    "updatedAt": "2025-06-19T23:25:43.977802"
+  },
+  {
+    "id": 4,
+    "description": "Buy groceries and cook",
+    "status": "todo",
+    "priority": "medium",
+    "due_date": "2025-06-19",
+    "notes": null,
+    "createdAt": "2025-06-19T23:27:12.315028",
+    "updatedAt": "2025-06-19T23:27:12.315028"
+  },
+  {
+    "id": 5,
+    "description": "Sleep",
+    "status": "todo",
+    "priority": "medium",
+    "due_date": null,
+    "notes": null,
+    "createdAt": "2025-06-19T23:30:39.762131",
+    "updatedAt": "2025-06-19T23:30:39.762131"
+  }
+]
