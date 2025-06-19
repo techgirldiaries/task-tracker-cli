@@ -109,3 +109,5 @@ Task Tracker CLI is a simple command-line tool for managing your tasks. It allow
 - Simple command-line interface with positional arguments.
 - Comprehensive error handling.
 - Automatically creates the `tasks.json` file if it doesn't exist.
+
+## Project Page URL: https://github.com/techgirldiaries/task-tracker-cli
