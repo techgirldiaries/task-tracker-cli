@@ -10,7 +10,7 @@ Task Tracker CLI is a simple command-line tool for managing your tasks. It allow
    - Run the script using Python:
 
      ```bash
-     python task-cli.py [command] [arguments]
+     python task-cli [command] [arguments]
      ```
 
    - Or, if `.py` files are associated with Python:
