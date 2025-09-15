@@ -15,7 +15,7 @@ def load_tasks():
             return []
 
 def save_tasks(tasks):
-    with open(TASKS_FILE, 'w') as f:
+    with open(TASKS_FILE, 'r') as f:
         json.dump(tasks, f, indent=2)
 
 def add_task(description):
